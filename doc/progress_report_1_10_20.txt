@@ -1,1 +1,16 @@
-progress_report_1_10_20
+Guys here is our progress report text doc. we should each update this file in the following format by the friday 10/20/2017 for the next progress grade.
+
+Team Member Name 
+  Target goals
+    List of overall goals you are trying to achieve in the project, and the tasks assigned to you.
+
+Achieved goals / activities 
+  List the activities by date and how that relates to the goal.
+  Amount of time spent per each of the activities.
+  Link to specific files (notebooks) which show the activity.
+
+
+
+
+
+
