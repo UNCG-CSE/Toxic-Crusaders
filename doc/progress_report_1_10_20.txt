@@ -1,11 +1,11 @@
 Guys here is our progress report text doc. we should each update this file in the following format,
 by friday 10/20/2017 for the next progress grade.
 
-Team Member Name 
+Team Member Name
   Target goals
     List of overall goals you are trying to achieve in the project, and the tasks assigned to you.
 
-Achieved goals / activities 
+Achieved goals / activities
   List the activities by date and how that relates to the goal.
   Amount of time spent per each of the activities.
   Link to specific files (notebooks) which show the activity.
@@ -21,7 +21,7 @@ Target goals 
 Assigned task- NC TRI data analysis years 2002-2006
 
 Achieved goals/ activities
-1. Plotting on-site releases, Top releasing facilities vs top carcinogen releasing facilities, Total/top carcinogen releases by industry sector 
+1. Plotting on-site releases, Top releasing facilities vs top carcinogen releasing facilities, Total/top carcinogen releases by industry sector
 FloridaTRIexperimenting.ipynb (October 11-October 15) Learning features of data frames with the dataset
 NCTRI2001-2005.ipynb (October 15-October 18) analyzing Top releasing facilities vs top carcinogen releasing facilities, Total/top carcinogen releases by industry sector
 NCTRI2002-2006(updated years).ipynb (October 18) Update year ranges to 2001-2005 notebook
@@ -30,13 +30,34 @@ Map beginning(updated).ipynb (October 18-October 20 Plotting on-site releases, s
 
 2. FloridaTRIexperimenting notebook (Estimate 6-7 hours) Est 2-3 hours for following notebooks
 
-3. Link to specific files (notebooks) which show the activity. 
+3. Link to specific files (notebooks) which show the activity.
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/FloridaTRIexperimenting.ipynb
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/NCTRI2001-2005.ipynb
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/NCTRI2002-2006(updated%20years).ipynb
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/Map%20beginning.ipynb
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/Map%20beginning(updated).ipynb
 
+Jacob Durham
 
+Target goals 
+      Overall project goal is to explore TRI data and relations therein, and find ways to connect
+      overall toxic release in areas with home value fluctuations from Zillow data. At this point,
+      we are having difficulty combining the two sets in a meaningful way, so we are currently
+      focused on exploring trends and relations in the TRI data sets. For this submission, we are
+      each looking at a particular period (5-year range) in the data and doing some analysis.
 
+Assigned task- NC TRI data analysis years 1997-2001
 
+Achieved goals/ activities
+  - Created initial group presentation(1-2 hrs)
+  - Initial analysis for Michigan to test pandas functions(1-2 hrs)
+  - Graphing and plotting for top release data totals and carcinogen totals in year range(3-4 hrs)
+  - Tested Zillow website API to try and find a way to combine neighborhood location data with
+    latitude and longitude data given in ZHVI data sets(2-3 hrs). Nothing found that seemed useful. Swetha
+    is looking into potential using centroid data from shape files, so hopefully that will allow
+    us to implement some combination of the sets!
+
+  Links to presentation/notebooks:
+    https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/MichiganTRI.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/NC_TRI_97-01.ipynb
