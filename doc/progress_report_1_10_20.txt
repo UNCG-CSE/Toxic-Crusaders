@@ -13,7 +13,10 @@ Achieved goals / activities
 Melvin Watlington
 
 Target goals 
-      Analyze toxic releases with Toxic Release Inventory (TRI) data, Visualize changes, improvements or lack of improvements within different regions as well as industry sectors. Compare the benefits and disadvantages of industrial production facilities. Use Zillow Home Value Index (ZHVI) data to find trends in these data that reveal the impact that industrial production has on communities and home values. (If possible)
+      Analyze toxic releases with Toxic Release Inventory (TRI) data, Visualize changes, improvements or lack of improvements within
+      different regions as well as industry sectors. Compare the benefits and disadvantages of industrial production facilities. Use
+      Zillow Home Value Index (ZHVI) data to find trends in these data that reveal the impact that industrial production has on
+      communities and home values. (If possible)
 
 Assigned task- NC TRI data analysis years 2002-2006
 
