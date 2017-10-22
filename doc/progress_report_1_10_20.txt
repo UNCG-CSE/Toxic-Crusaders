@@ -61,3 +61,29 @@ Achieved goals/ activities
     https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/MichiganTRI.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/NC_TRI_97-01.ipynb
+Jacob Durham
+
+Target goals 
+      Overall project goal is to explore TRI data and relations therein, and find ways to connect
+      overall toxic release in areas with home value fluctuations from Zillow data. At this point,
+      we are having difficulty combining the two sets in a meaningful way, so we are currently
+      focused on exploring trends and relations in the TRI data sets. For this submission, we are
+      each looking at a particular period (5-year range) in the data and doing some analysis.
+
+Swetha Polisetty
+
+Assigned task- NC TRI data analysis years 2007-2011
+
+Achieved goals/ activities
+  - Provided guidelines and key points for initial group presentation
+  - Initial analysis for NC TRI data using pandas (1-2 hrs)
+  - Graphing and plotting for top release data totals and carcinogen totals in year range for NC(3-4 hrs)
+  - Looked at various correlated feature analysis with respect to TRI - Zillow - ZIPCODE centroid data files.
+    The variations of home prices and industry sectors within a specific range of radius from the centroid of the zip codes.
+    Plotted various graphs for each analysis.
+
+  Links to presentation/notebooks:
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-allhomes.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-condominum.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/NC_state_carcinogen.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/NC_TRI_2007-2011.ipynb
