@@ -57,7 +57,7 @@ def write_cleaned_tri_to_csv(tri_df):
 if(len(sys.argv) == 2):
     print """
         This script is particularly for TRI US data sets. Read documentation at
-        <insert GitHub URL here> for example.
+        https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/Cleaning_TRI_Data.ipynb for example.
 
         Cleaning CSV File...
     """
@@ -84,5 +84,5 @@ else:
         Provide a single TRI data file for cleaning.
 
         This script is particularly for TRI US data sets. Read documentation at
-        <insert GitHub URL here> for example.
+        https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/Cleaning_TRI_Data.ipynb for example.
     """
