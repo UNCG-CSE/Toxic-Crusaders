@@ -50,20 +50,35 @@ def handle_nan_tri_df(tri_df):
 # and the files will be in the format 'TRI_<YEAR>_US_CLEAN.csv'
 # define out dir to be made -- change this if you want files written to a different directory
 directory = './clean_TRI_Data'
-def write_cleaned_tri_to_csv(tri_df,directory):
+def write_cleaned_tri_to_csv(tri_df, tri_type, directory):
     #create target directory if it doesn't already exist
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-    tri_df.to_csv('%s/%s'%(directory,'TRI_%s_US_CLEAN.csv'%(tri_df.YEAR[0])))
+    if not tri_type == 'US':
+        if not os.path.exists('%s/State_TRI/'%directory):
+            os.makedirs('%s/State_TRI/'%directory)
+        tri_df.to_csv('%s/State_TRI/%s'%(directory,'TRI_%s_%s_CLEAN.csv'%(tri_df.YEAR[0], tri_type)))
+    else:
+        if not os.path.exists('%s/US_TRI/'%directory):
+            os.makedirs('%s/US_TRI/'%directory)
+        tri_df.to_csv('%s/US_TRI/%s'%(directory,'TRI_%s_US_CLEAN.csv'%(tri_df.YEAR[0])))
 
-if(len(sys.argv) == 2):
+if len(sys.argv) == 2:
     print """
-        This script is particularly for TRI US data sets. Read documentation at
+        This script is particularly for TRI US and State data sets. Read documentation at
         https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/Cleaning_TRI_Data.ipynb for example.
 
         Cleaning CSV File...
     """
+
+    tri_type = str(sys.argv[1].split('/')[-1].split('_')[-1].split('.')[0])
+
+    if not tri_type == 'US':
+        print 'State TRI data file imported...\n'
+    else:
+        print 'US TRI data file imported...\n'
+
     #read in csv file
     initial_df = pd.read_csv(sys.argv[1])
 
@@ -77,7 +92,7 @@ if(len(sys.argv) == 2):
 
     print 'Writing cleaned DataFrame to %s/TRI_%s_US_CLEAN.csv\n'%(directory,clean_df.YEAR[0])
     #write cleaned TRI DataFrame to csv and store in local folder - create if it doesn't exist yet
-    write_cleaned_tri_to_csv(clean_df,directory)
+    write_cleaned_tri_to_csv(clean_df, tri_type, directory)
 
     #it probably works!
     print 'TRI CSV File cleaned and placed in ./clean_TRI_Data/TRI_%s_US_CLEAN.csv\n'%(clean_df.YEAR[0])
@@ -86,6 +101,6 @@ else:
     print """
         Provide a single TRI data file for cleaning.
 
-        This script is particularly for TRI US data sets. Read documentation at
+        This script is particularly for TRI US and State data sets. Read documentation at
         https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/Cleaning_TRI_Data.ipynb for example.
     """
