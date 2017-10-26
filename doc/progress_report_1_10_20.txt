@@ -60,13 +60,16 @@ Achieved goals/ activities
     latitude and longitude data given in ZHVI data sets(2-3 hrs). Nothing found that seemed useful. Swetha
     is looking into potential using centroid data from shape files, so hopefully that will allow
     us to implement some combination of the sets!
-  - Created command line utility to clean TRI US CSV files, this script(5-6 hrs, planning, coding, and testing)
+  - Created command line utility to clean TRI State and US CSV files(5-6 hrs, planning, coding, and testing)
     - Trims out all irrelevant columns for our project
     - Renames some columns to achieve standard naming for column usage
     - Handles NaN values in numerical columns
-    - Creates local folder and exports cleaned CSV
+    - Creates local folders for State and US and exports cleaned CSV
     - Significantly reduces CSV file size(~75% reduction)
-    - Jupyter Notebook creating the utility step-by-step, with examples
+    - Created Jupyter Notebook creating the utility step-by-step, with examples
+    - Updated after initial creation to include State CSV conversion
+      - State CSV files are handled with the same process
+      - Script dynamically assigns the appropriate sub-folder and new CSV name
 
   Relevant Links:
     https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation
