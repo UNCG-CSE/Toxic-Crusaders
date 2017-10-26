@@ -9,7 +9,9 @@ Achieved goals / activities
   List the activities by date and how that relates to the goal.
   Amount of time spent per each of the activities.
   Link to specific files (notebooks) which show the activity.
-  
+
+----------------------------------------------------------
+
 Melvin Watlington
 
 Target goals 
@@ -37,6 +39,8 @@ https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/NCTRI2002-2006(up
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/Map%20beginning.ipynb
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/Map%20beginning(updated).ipynb
 
+----------------------------------------------------------
+
 Jacob Durham
 
 Target goals 
@@ -56,19 +60,22 @@ Achieved goals/ activities
     latitude and longitude data given in ZHVI data sets(2-3 hrs). Nothing found that seemed useful. Swetha
     is looking into potential using centroid data from shape files, so hopefully that will allow
     us to implement some combination of the sets!
+  - Created command line utility to clean TRI US CSV files, this script(5-6 hrs, planning, coding, and testing)
+    - Trims out all irrelevant columns for our project
+    - Renames some columns to achieve standard naming for column usage
+    - Handles NaN values in numerical columns
+    - Creates local folder and exports cleaned CSV
+    - Significantly reduces CSV file size(~75% reduction)
+    - Jupyter Notebook creating the utility step-by-step, with examples
 
-  Links to presentation/notebooks:
+  Relevant Links:
     https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/MichiganTRI.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/NC_TRI_97-01.ipynb
-Jacob Durham
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/Cleaning_TRI_Data.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/clean_tri_csv.py
 
-Target goals 
-      Overall project goal is to explore TRI data and relations therein, and find ways to connect
-      overall toxic release in areas with home value fluctuations from Zillow data. At this point,
-      we are having difficulty combining the two sets in a meaningful way, so we are currently
-      focused on exploring trends and relations in the TRI data sets. For this submission, we are
-      each looking at a particular period (5-year range) in the data and doing some analysis.
+----------------------------------------------------------
 
 Swetha Polisetty
 
@@ -82,8 +89,10 @@ Achieved goals/ activities
     The variations of home prices and industry sectors within a specific range of radius from the centroid of the zip codes.
     Plotted various graphs for each analysis.
 
-  Links to presentation/notebooks:
+  Links to notebooks:
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-allhomes.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-condominum.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/NC_state_carcinogen.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/NC_TRI_2007-2011.ipynb
+
+----------------------------------------------------------
