@@ -1,6 +1,9 @@
 #importing utility modules
 import os, sys
 import pandas as pd
+#LIVIN' ON THE EDGE
+import warnings
+warnings.filterwarnings("ignore")
 
 # Function to capture/rename the attributes listed above from TRI dataframe
 # Some input validataion could be done here... but we're all going to agree to only use valid inputs!!
@@ -45,9 +48,9 @@ def handle_nan_tri_df(tri_df):
 
 # Function to write the DataFrame to csv. For the purposes of this project, we will call the folder clean_TRI_Data/
 # and the files will be in the format 'TRI_<YEAR>_US_CLEAN.csv'
-def write_cleaned_tri_to_csv(tri_df):
-    #change this if you want files written to a different directory
-    directory = './clean_TRI_Data'
+# define out dir to be made -- change this if you want files written to a different directory
+directory = './clean_TRI_Data'
+def write_cleaned_tri_to_csv(tri_df,directory):
     #create target directory if it doesn't already exist
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -64,20 +67,20 @@ if(len(sys.argv) == 2):
     #read in csv file
     initial_df = pd.read_csv(sys.argv[1])
 
-    print 'Trimming and renaming columns'
+    print 'Trimming and renaming columns\n'
     #trim and rename columns
     trimmed_df = trim_tri_df(initial_df)
 
-    print 'Converting NaN values in numerical columns to zeroes'
+    print 'Converting NaN values in numerical columns to zeroes\n'
     #fill NaN values in appropriate categories
     clean_df = handle_nan_tri_df(trimmed_df)
 
-    print 'Writing cleaned DataFrame to ./clean_TRI_Data/TRI_%s_US_CLEAN.csv'%(clean_df.YEAR[0])
+    print 'Writing cleaned DataFrame to %s/TRI_%s_US_CLEAN.csv\n'%(directory,clean_df.YEAR[0])
     #write cleaned TRI DataFrame to csv and store in local folder - create if it doesn't exist yet
-    write_cleaned_tri_to_csv(clean_df)
+    write_cleaned_tri_to_csv(clean_df,directory)
 
     #it probably works!
-    print 'TRI CSV File cleaned and placed in ./clean_TRI_Data/TRI_%s_US_CLEAN.csv'%(clean_df.YEAR[0])
+    print 'TRI CSV File cleaned and placed in ./clean_TRI_Data/TRI_%s_US_CLEAN.csv\n'%(clean_df.YEAR[0])
 
 else:
     print """
