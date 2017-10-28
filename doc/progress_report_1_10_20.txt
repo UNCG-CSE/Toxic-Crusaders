@@ -53,7 +53,7 @@ Target goals 
 Assigned task- NC TRI data analysis years 1997-2001
 
 Achieved goals/ activities
-  - Created initial group presentation(1-2 hrs)
+  - Created group presentation(3-4 hrs)
   - Initial analysis for Michigan to test pandas functions(1-2 hrs)
   - Graphing and plotting for top release data totals and carcinogen totals in year range(3-4 hrs)
   - Tested Zillow website API to try and find a way to combine neighborhood location data with
@@ -72,11 +72,12 @@ Achieved goals/ activities
       - Script dynamically assigns the appropriate sub-folder and new CSV name
 
   Relevant Links:
-    https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation
-    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/MichiganTRI.ipynb
-    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/NC_TRI_97-01.ipynb
-    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/Cleaning_TRI_Data.ipynb
-    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/clean_tri_csv.py
+    https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation/pres_one
+    https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation/pres_two
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/MichiganTRI.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/MichiganTRI.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/Cleaning_TRI_Data.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/clean_tri_csv.py
 
 ----------------------------------------------------------
 
