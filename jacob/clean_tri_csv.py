@@ -9,24 +9,25 @@ warnings.filterwarnings("ignore")
 # Some input validataion could be done here... but we're all going to agree to only use valid inputs!!
 def trim_tri_df(tri_df):
     # list of the categories we want from each tri data set
-    desired_categories = ['YEAR','FACILITY_NAME','FEDERAL_FACILITY','PARENT_COMPANY_NAME',   \
-                          'INDUSTRY_SECTOR','ZIP','ST', 'CITY', 'COUNTY', 'LATITUDE',        \
-                          'LONGITUDE', 'CHEMICAL', 'UNIT_OF_MEASURE', 'CARCINOGEN',          \
-                          'CLEAR_AIR_ACT_CHEMICAL','TOTAL_RELEASES','ON-SITE_RELEASE_TOTAL', \
-                          'OFF-SITE_RELEASE_TOTAL', 'OFF-SITE_RECYCLED_TOTAL',               \
-                          '8.4_RECYCLING_ON-SITE', '8.8_ONE-TIME_RELEASE']
+    desired_categories = [
+        'YEAR','FACILITY_NAME','FEDERAL_FACILITY','PARENT_COMPANY_NAME',       \
+        'INDUSTRY_SECTOR','ZIP','ST', 'CITY', 'COUNTY', 'LATITUDE',            \
+        'LONGITUDE', 'CHEMICAL', 'UNIT_OF_MEASURE', 'CARCINOGEN',              \
+        'CLEAR_AIR_ACT_CHEMICAL','TOTAL_RELEASES','ON-SITE_RELEASE_TOTAL',     \
+        'OFF-SITE_RELEASE_TOTAL', 'OFF-SITE_RECYCLED_TOTAL',                   \
+        '8.4_RECYCLING_ON-SITE', '8.8_ONE-TIME_RELEASE']
 
     tri_df = tri_df[desired_categories]
 
     #rename categories as described above
-    tri_df.rename(columns = {                                                     \
-            'ST':'STATE',                                                                    \
-            'CLEAR_AIR_ACT_CHEMICAL':'CAA_CHEMICAL',                                         \
-            'ON-SITE_RELEASE_TOTAL':'ON_SITE_RELEASE_TOTAL',                                 \
-            'OFF-SITE_RELEASE_TOTAL':'OFF_SITE_RELEASE_TOTAL',                               \
-            '8.4_RECYCLING_ON-SITE':'ON_SITE_RECYCLED_TOTAL',                                \
-            'OFF-SITE_RECYCLED_TOTAL':'OFF_SITE_RECYCLED_TOTAL',                             \
-            '8.8_ONE-TIME_RELEASE':'ONE_TIME_RELEASES'}, inplace=True)
+    tri_df.rename(columns = {                                                  \
+        'ST':'STATE',                                                          \
+        'CLEAR_AIR_ACT_CHEMICAL':'CAA_CHEMICAL',                               \
+        'ON-SITE_RELEASE_TOTAL':'ON_SITE_RELEASE_TOTAL',                       \
+        'OFF-SITE_RELEASE_TOTAL':'OFF_SITE_RELEASE_TOTAL',                     \
+        '8.4_RECYCLING_ON-SITE':'ON_SITE_RECYCLED_TOTAL',                      \
+        'OFF-SITE_RECYCLED_TOTAL':'OFF_SITE_RECYCLED_TOTAL',                   \
+        '8.8_ONE-TIME_RELEASE':'ONE_TIME_RELEASES'}, inplace=True)
 
     #return trimmed tri
     return tri_df
@@ -37,8 +38,9 @@ def trim_tri_df(tri_df):
 # The output and input to this function is very specific to this particular data set and project, of course.
 def handle_nan_tri_df(tri_df):
     # Filling NaN categories for attributes that may need to be summed across
-    fill_zero_categories = ['TOTAL_RELEASES','ON_SITE_RELEASE_TOTAL','OFF_SITE_RELEASE_TOTAL',    \
-                            'ON_SITE_RECYCLED_TOTAL','OFF_SITE_RECYCLED_TOTAL','ONE_TIME_RELEASES']
+    fill_zero_categories = [
+        'TOTAL_RELEASES','ON_SITE_RELEASE_TOTAL','OFF_SITE_RELEASE_TOTAL',     \
+        'ON_SITE_RECYCLED_TOTAL','OFF_SITE_RECYCLED_TOTAL','ONE_TIME_RELEASES']
 
     for i in range(len(fill_zero_categories)):
         tri_df[fill_zero_categories[i]].fillna(0,inplace=True)
@@ -56,10 +58,12 @@ def write_cleaned_tri_to_csv(tri_df, tri_type, directory):
         os.makedirs(directory)
 
     if not tri_type == 'US':
+        #check for state sub-folder, create if none
         if not os.path.exists('%s/State_TRI/'%directory):
             os.makedirs('%s/State_TRI/'%directory)
         tri_df.to_csv('%s/State_TRI/%s'%(directory,'TRI_%s_%s_CLEAN.csv'%(tri_df.YEAR[0], tri_type)))
     else:
+        #check for US sub-folder, create if none
         if not os.path.exists('%s/US_TRI/'%directory):
             os.makedirs('%s/US_TRI/'%directory)
         tri_df.to_csv('%s/US_TRI/%s'%(directory,'TRI_%s_US_CLEAN.csv'%(tri_df.YEAR[0])))
