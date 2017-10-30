@@ -66,10 +66,15 @@ Achieved goals/ activities
     - Handles NaN values in numerical columns
     - Creates local folders for State and US and exports cleaned CSV
     - Significantly reduces CSV file size(~75% reduction)
-    - Created Jupyter Notebook creating the utility step-by-step, with examples
+    - Created Jupyter Notebook building the utility step-by-step, with examples
     - Updated after initial creation to include State CSV conversion
       - State CSV files are handled with the same process
       - Script dynamically assigns the appropriate sub-folder and new CSV name
+  - Created script to load often used files and some helper variables/functions(3-4 hrs)
+    - pre-made lists of state names and abbreviations
+    - function to create dictionary object and pair with list of data values
+    - function to take dict object with state/value and map with Basemap
+    - Created Jupyter Notebook explaining script contents and purpose, with examples of use
 
   Relevant Links:
     https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation/pres_one
@@ -78,6 +83,8 @@ Achieved goals/ activities
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/MichiganTRI.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/Cleaning_TRI_Data.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/clean_tri_csv.py
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/Working_With_Shapefiles.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/crusaderutils.py
 
 ----------------------------------------------------------
 

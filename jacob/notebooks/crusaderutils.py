@@ -42,27 +42,27 @@ def map_compare_states(stateobj_names, min, max, map_title='TRI Visualization'):
     colors={}
     statenames=[]
     #set colors here -- plt.cm.<color set type>
+    # other color types than viridis are plasma, inferno, magma, more at https://matplotlib.org/users/colormaps.html
+    #TODO: add arg to select color map -- maybe several preset options
     cmap = plt.cm.viridis
     #set value ranges
     vmin = min; vmax = (max + (max*0.15))
-    #print(m.states_info[0].keys())
     ignore = ['District of Columbia','United States Virgin Islands','Puerto Rico','American Samoa','Guam','Commonwealth of the Northern Mariana Islands']
     for shapedict in m.states_info:
         statename = shapedict['NAME']
-        # skip DC and Puerto Rico.
+        # ignore shapes in shapefile that we don't want -- ie: non-states
         if statename not in ignore:
             # takes array of state names with values {'Alabama':<value>,'Alaska':<value>,...}
             val = stateobj_names[statename]
             # calling colormap with value between 0 and 1 returns
-            # rgba value.  Invert color range (hot colors are high
-            # population), take sqrt root to spread out colors more.
+            # rgba value.
             colors[statename] = cmap(1.-np.sqrt((val-vmin)/(vmax-vmin)))[:3]
         statenames.append(statename)
+
     # cycle through state names, color each one.
-    ax = plt.gca() # get current axes instance
     for nshape,seg in enumerate(m.states):
-        # skip DC and Puerto Rico.
         if statenames[nshape] not in ignore:
+            # translate alaska and hawaii to be on our US map
             if statenames[nshape] == 'Alaska':
                 # alaska needs to be scaled down to fit
                 seg = list(map(lambda (x,y): (0.25*x + 750000, 0.25*y-800000), seg))
@@ -72,6 +72,8 @@ def map_compare_states(stateobj_names, min, max, map_title='TRI Visualization'):
             color = rgb2hex(colors[statenames[nshape]])
             poly = Polygon(seg,facecolor=color,edgecolor=color)
             ax.add_patch(poly)
+    #so we can see alaska and Hawaii
+    #TODO: figure out how to draw alaska and hawaii boundaries and translate
     m.drawmapboundary(fill_color='#99eeff')
     plt.title(map_title)
     plt.show()
