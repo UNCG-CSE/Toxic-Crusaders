@@ -71,6 +71,7 @@ def map_compare_states(stateobj_names, min, max, map_title='TRI Visualization'):
 
             color = rgb2hex(colors[statenames[nshape]])
             poly = Polygon(seg,facecolor=color,edgecolor=color)
+            ax = plt.gca()
             ax.add_patch(poly)
     #so we can see alaska and Hawaii
     #TODO: figure out how to draw alaska and hawaii boundaries and translate
