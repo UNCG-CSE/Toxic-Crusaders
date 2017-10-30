@@ -34,7 +34,7 @@ make_state_obj_names = lambda vals: {x:y for x,y in zip(statelist_names,vals)}
 ### min --> smallest val value
 ### max ---> larget val value
 ### map_title --> 'some cool name for this map' or default
-def map_compare_states(stateobj_names, min, max, map_title='TRI Visualization'):
+def map_compare_states(stateobj_names, min, max, map_title='TRI Visualization',c='viridis'):
     m = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
                 projection='lcc',lat_1=33,lat_2=45,lon_0=-95)
     shp_info = m.readshapefile('./state_shapes/cb_2016_us_state_500k','states',drawbounds=True)
@@ -44,7 +44,19 @@ def map_compare_states(stateobj_names, min, max, map_title='TRI Visualization'):
     #set colors here -- plt.cm.<color set type>
     # other color types than viridis are plasma, inferno, magma, more at https://matplotlib.org/users/colormaps.html
     #TODO: add arg to select color map -- maybe several preset options
-    cmap = plt.cm.viridis
+    if c == 'viridis':
+        cmap = plt.cm.viridis
+    elif c == 'autumn':
+        cmap = plt.cm.autumn
+    elif c == 'plasma':
+        cmap = plt.cm.plasma
+    elif c == 'inferno':
+        cmap = plt.cm.inferno
+    elif c == 'magma':
+        cmap = plt.cm.magma
+    elif c == 'Greys':
+        cmap = plt.cm.Greys
+
     #set value ranges
     vmin = min; vmax = (max + (max*0.15))
     ignore = ['District of Columbia','United States Virgin Islands','Puerto Rico','American Samoa','Guam','Commonwealth of the Northern Mariana Islands']
