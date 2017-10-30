@@ -94,12 +94,12 @@ if len(sys.argv) == 2:
     #fill NaN values in appropriate categories
     clean_df = handle_nan_tri_df(trimmed_df)
 
-    print 'Writing cleaned DataFrame to %s/TRI_%s_US_CLEAN.csv\n'%(directory,clean_df.YEAR[0])
+    print 'Writing cleaned DataFrame to %s/TRI_%s_%s_CLEAN.csv\n'%(directory,clean_df.YEAR[0],tri_type)
     #write cleaned TRI DataFrame to csv and store in local folder - create if it doesn't exist yet
     write_cleaned_tri_to_csv(clean_df, tri_type, directory)
 
     #it probably works!
-    print 'TRI CSV File cleaned and placed in ./clean_TRI_Data/TRI_%s_US_CLEAN.csv\n'%(clean_df.YEAR[0])
+    print 'TRI CSV File cleaned and placed in ./clean_TRI_Data/TRI_%s_%s_CLEAN.csv\n'%(clean_df.YEAR[0],tri_type)
 
 else:
     print """
