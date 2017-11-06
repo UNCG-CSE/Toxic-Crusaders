@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.colors import rgb2hex
+from matplotlib.colors import rgb2hex, Normalize
 from matplotlib.patches import Polygon
+from matplotlib.colorbar import ColorbarBase
 from mpl_toolkits.basemap import Basemap as Basemap
 #supress deprecated warnings for now
 import warnings
@@ -89,4 +90,9 @@ def map_compare_states(stateobj_names, min, max, map_title='TRI Visualization',c
     #TODO: figure out how to draw alaska and hawaii boundaries and translate
     m.drawmapboundary(fill_color='#99eeff')
     plt.title(map_title)
+    cax = plt.gcf().add_axes([0.33, 0.72, 0.4, 0.015]) # posititon
+    cb = ColorbarBase(cax,cmap=cmap.reversed(),norm=Normalize(vmin=vmin, vmax=vmax),orientation='horizontal',label='Emission in Pounds -- Darker == Higher Value')
+    cb.ax.set_xticklabels([])
+    cb.ax.set_xticks([])
+    cb.ax.xaxis.set_label_position('top')
     plt.show()
