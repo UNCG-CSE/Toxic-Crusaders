@@ -45,12 +45,7 @@ Jacob Durham
 
 Target goals 
       Overall project goal is to explore TRI data and relations therein, and find ways to connect
-      overall toxic release in areas with home value fluctuations from Zillow data. At this point,
-      we are having difficulty combining the two sets in a meaningful way, so we are currently
-      focused on exploring trends and relations in the TRI data sets. For this submission, we are
-      each looking at a particular period (5-year range) in the data and doing some analysis.
-
-Assigned task- NC TRI data analysis years 1997-2001
+      overall toxic release in areas with home value fluctuations from Zillow data.
 
 Achieved goals/ activities
   - Created group presentation(3-4 hrs)
@@ -75,6 +70,11 @@ Achieved goals/ activities
     - function to create dictionary object and pair with list of data values
     - function to take dict object with state/value and map with Basemap
     - Created Jupyter Notebook explaining script contents and purpose, with examples of use
+  - Distilled and generalized Class Assignment 4 analysis for group project(3-4 hrs)
+    - noticed trend in single industry sector of massive outlier contribution
+    - wrote functions to explore outlier stats for given year range and industry sector
+    - wrote functions to summarize and plot general stats for intustry sector for 30-year period
+
 
   Relevant Links:
     https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation/pres_one
@@ -82,10 +82,10 @@ Achieved goals/ activities
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/MichiganTRI.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/MichiganTRI.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/Cleaning_TRI_Data.ipynb
-    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/clean_tri_csv.py
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/util/clean_tri_csv.py
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/Working_With_Shapefiles.ipynb
-    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/crusaderutils.py
-
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/util/crusaderutils.py
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/TRI_Industry_Sector_Analysis.ipynb
 ----------------------------------------------------------
 
 Swetha Polisetty
