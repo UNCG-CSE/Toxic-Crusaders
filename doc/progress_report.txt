@@ -118,4 +118,6 @@ Achieved goals/ activities
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-3bedroom.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-2bedroom.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-4bedroom.ipynb
+  https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/HypothesisTesting.ipynb
+   https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/TRI-Zillow-data-distributions.ipynb
 ----------------------------------------------------------
