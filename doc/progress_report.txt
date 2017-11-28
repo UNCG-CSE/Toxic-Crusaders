@@ -99,11 +99,23 @@ Achieved goals/ activities
   - Looked at various correlated feature analysis with respect to TRI - Zillow - ZIPCODE centroid data files.
     The variations of home prices and industry sectors within a specific range of radius from the centroid of the zip codes.
     Plotted various graphs for each analysis.
+ - Analyzed data for 1-bedroom housing and TRI data for NC state through years 2002-2015
+ - Worked on the distribution analysis of data from TRI and Zillow. 
+ - Performed Correlation analysis of features from TRI and Zillow data combined together and observed patterns through years 2002-2015 for the NC state data 
+ - Implemented Hypothesis testing with the Trial and Zillow data. The features of house pricing and distance of houses from the industries was tested in this 
+   analysis. 
+ - Observed the Linear Regression model for the TRI and Zillow data features to validate the null hypothesis formulated a s apart of the hypothesis testing.
+   
+
 
   Links to notebooks:
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-allhomes.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-condominum.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/NC_state_carcinogen.ipynb
     https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/NC_TRI_2007-2011.ipynb
-
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/Null%20Hypothesis%20%20-Correlation%20and%20Linear%20Regression.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-1bedroom.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-3bedroom.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-2bedroom.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-4bedroom.ipynb
 ----------------------------------------------------------
