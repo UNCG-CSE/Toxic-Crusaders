@@ -1,0 +1,123 @@
+Guys here is our progress report text doc. we should each update this file in the following format,
+by friday 10/20/2017 for the next progress grade.
+
+Team Member Name
+  Target goals
+    List of overall goals you are trying to achieve in the project, and the tasks assigned to you.
+
+Achieved goals / activities
+  List the activities by date and how that relates to the goal.
+  Amount of time spent per each of the activities.
+  Link to specific files (notebooks) which show the activity.
+
+----------------------------------------------------------
+
+Melvin Watlington
+
+Target goals 
+      Analyze toxic releases with Toxic Release Inventory (TRI) data, Visualize changes, improvements or lack of improvements within
+      different regions as well as industry sectors. Compare the benefits and disadvantages of industrial production facilities. Use
+      Zillow Home Value Index (ZHVI) data to find trends in these data that reveal the impact that industrial production has on
+      communities and home values. (If possible)
+
+Assigned task- NC TRI data analysis years 2002-2006
+
+Achieved goals/ activities
+1. Plotting on-site releases, Top releasing facilities vs top carcinogen releasing facilities, Total/top carcinogen releases by industry sector
+FloridaTRIexperimenting.ipynb (October 11-October 15) Learning features of data frames with the dataset
+NCTRI2001-2005.ipynb (October 15-October 18) analyzing Top releasing facilities vs top carcinogen releasing facilities, Total/top carcinogen releases by industry sector
+NCTRI2002-2006(updated years).ipynb (October 18) Update year ranges to 2001-2005 notebook
+Map beginning.ipynb (October 18) Plotting on-site releases, specifically facilities with carcinogen releases
+Map beginning(updated).ipynb (October 18-October 20 Plotting on-site releases, specifically facilities with carcinogen releases
+
+2. FloridaTRIexperimenting notebook (Estimate 6-7 hours) Est 2-3 hours for following notebooks
+
+3. Link to specific files (notebooks) which show the activity.
+https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/FloridaTRIexperimenting.ipynb
+https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/NCTRI2001-2005.ipynb
+https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/NCTRI2002-2006(updated%20years).ipynb
+https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/Map%20beginning.ipynb
+https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/Map%20beginning(updated).ipynb
+
+----------------------------------------------------------
+
+Jacob Durham
+
+Target goals 
+      Overall project goal is to explore TRI data and relations therein, and find ways to connect
+      overall toxic release in areas with home value fluctuations from Zillow data.
+
+Achieved goals/ activities
+  - Created group presentation(3-4 hrs)
+  - Initial analysis for Michigan to test pandas functions(1-2 hrs)
+  - Graphing and plotting for top release data totals and carcinogen totals in year range(3-4 hrs)
+  - Tested Zillow website API to try and find a way to combine neighborhood location data with
+    latitude and longitude data given in ZHVI data sets(2-3 hrs). Nothing found that seemed useful. Swetha
+    is looking into potential using centroid data from shape files, so hopefully that will allow
+    us to implement some combination of the sets!
+  - Created command line utility to clean TRI State and US CSV files(5-6 hrs, planning, coding, and testing)
+    - Trims out all irrelevant columns for our project
+    - Renames some columns to achieve standard naming for column usage
+    - Handles NaN values in numerical columns
+    - Creates local folders for State and US and exports cleaned CSV
+    - Significantly reduces CSV file size(~75% reduction)
+    - Created Jupyter Notebook building the utility step-by-step, with examples
+    - Updated after initial creation to include State CSV conversion
+      - State CSV files are handled with the same process
+      - Script dynamically assigns the appropriate sub-folder and new CSV name
+  - Created script to load often used files and some helper variables/functions(3-4 hrs)
+    - pre-made lists of state names and abbreviations
+    - function to create dictionary object and pair with list of data values
+    - function to take dict object with state/value and map with Basemap
+    - Created Jupyter Notebook explaining script contents and purpose, with examples of use
+  - Distilled and generalized Class Assignment 4 analysis for group project(3-4 hrs)
+    - noticed trend in single industry sector of massive outlier contribution
+    - wrote functions to explore outlier stats for given year range and industry sector
+    - wrote functions to summarize and plot general stats for intustry sector for 30-year period
+
+
+  Relevant Links:
+    https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation/pres_one
+    https://github.com/UNCG-CSE/Toxic-Crusaders/tree/master/jacob/presentation/pres_two
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/MichiganTRI.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/MichiganTRI.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/Cleaning_TRI_Data.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/util/clean_tri_csv.py
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/Working_With_Shapefiles.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/util/crusaderutils.py
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/jacob/notebooks/TRI_Industry_Sector_Analysis.ipynb
+----------------------------------------------------------
+
+Swetha Polisetty
+
+Assigned task- NC TRI data analysis years 2007-2011
+
+Achieved goals/ activities
+  - Provided guidelines and key points for initial group presentation
+  - Initial analysis for NC TRI data using pandas (1-2 hrs)
+  - Graphing and plotting for top release data totals and carcinogen totals in year range for NC(3-4 hrs)
+  - Looked at various correlated feature analysis with respect to TRI - Zillow - ZIPCODE centroid data files.(3-4 hrs)
+    The variations of home prices and industry sectors within a specific range of radius from the centroid of the zip codes.
+    Plotted various graphs for each analysis.
+ - Analyzed data for 1-bedroom housing and TRI data for NC state through years 2002-2015(2-3 hrs)
+ - Worked on the distribution analysis of data from TRI and Zillow. (4-5 hrs)
+ - Performed Correlation analysis of features from TRI and Zillow data combined together and observed patterns through years 2002-2015 for the NC state data (1-2 hrs)
+ - Implemented Hypothesis testing with the Trial and Zillow data. The features of house pricing and distance of houses from the industries was tested in this 
+   analysis. (3-4 hrs)
+ - Observed the Linear Regression model for the TRI and Zillow data features to validate the null hypothesis formulated as apart of the hypothesis testing.(1-2 hrs)
+   
+
+
+  Links to notebooks:
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-allhomes.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-condominum.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/NC_state_carcinogen.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/NC_TRI_2007-2011.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/Null%20Hypothesis%20%20-Correlation%20and%20Linear%20Regression.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-1bedroom.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-3bedroom.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-2bedroom.ipynb
+    https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/zillow-tri-centroid-data_analysis-4bedroom.ipynb
+  https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/HypothesisTesting.ipynb
+   https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/swetha/TRI-Zillow-data-distributions.ipynb
+----------------------------------------------------------
