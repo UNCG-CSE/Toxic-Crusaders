@@ -1,4 +1,4 @@
-Guys here is our progress report text doc. we should each update this file in the following format,
+﻿Guys here is our progress report text doc. we should each update this file in the following format,
 by friday 10/20/2017 for the next progress grade.
 
 Team Member Name
@@ -23,12 +23,14 @@ Target goals 
 Assigned task- NC TRI data analysis years 2002-2006
 
 Achieved goals/ activities
-1. Plotting on-site releases, Top releasing facilities vs top carcinogen releasing facilities, Total/top carcinogen releases by industry sector
-FloridaTRIexperimenting.ipynb (October 11-October 15) Learning features of data frames with the dataset
-NCTRI2001-2005.ipynb (October 15-October 18) analyzing Top releasing facilities vs top carcinogen releasing facilities, Total/top carcinogen releases by industry sector
-NCTRI2002-2006(updated years).ipynb (October 18) Update year ranges to 2001-2005 notebook
-Map beginning.ipynb (October 18) Plotting on-site releases, specifically facilities with carcinogen releases
-Map beginning(updated).ipynb (October 18-October 20 Plotting on-site releases, specifically facilities with carcinogen releases
+- Plotting on-site releases, Top releasing facilities vs top carcinogen releasing facilities, Total/top carcinogen releases by industry sector
+-FloridaTRIexperimenting.ipynb Learning features of data frames with the dataset
+-NCTRI2001-2005.ipynbanalyzing Top releasing facilities vs top carcinogen releasing facilities, Total/top carcinogen releases by industry sector
+-NCTRI2002-2006(updated years).ipynb Update year ranges to 2001-2005 notebook
+-Map beginning.ipynb Plotting on-site releases, specifically facilities with carcinogen releases
+-Map beginning(updated).ipynb  Plotting on-site releases, specifically facilities with carcinogen releases
+-2014stats.ipynb Statistical analysis,hypothesis testing within the Food industry during 2014 in North Carolina
+-Updated presentation slides
 
 2. FloridaTRIexperimenting notebook (Estimate 6-7 hours) Est 2-3 hours for following notebooks
 
@@ -38,7 +40,7 @@ https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/NCTRI2001-2005.ip
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/NCTRI2002-2006(updated%20years).ipynb
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/Map%20beginning.ipynb
 https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/Map%20beginning(updated).ipynb
-
+https://github.com/UNCG-CSE/Toxic-Crusaders/blob/master/melvin/2014stats.ipynb
 ----------------------------------------------------------
 
 Jacob Durham
